@@ -1,0 +1,22 @@
+
+body {
+  background: linear-gradient(to right, #8B0000, #000000);
+  color: white;
+  font-family: Arial;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px black;
+}
+
+img {
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: red;
+}
