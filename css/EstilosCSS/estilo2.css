@@ -1,0 +1,17 @@
+h1 {
+  color: rgb(255, 10, 10);
+}
+
+h2, h3 {
+  text-align: center;
+  color: rgb(255, 63, 63);
+}
+
+p {
+  text-align: center;
+}
+
+nav a {
+  color: rgb(243, 38, 117);
+  margin: 10px;
+}
