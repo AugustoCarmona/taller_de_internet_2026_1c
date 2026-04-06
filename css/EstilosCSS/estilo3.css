@@ -1,6 +1,6 @@
 
 body {
-  background: linear-gradient(to right, #8B0000, #000000);
+  background: linear-gradient(to right, #8B0000, #01244f);
   color: white;
   font-family: Arial;
 }
@@ -9,12 +9,12 @@ body {
   width: 80%;
   margin: auto;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 35px;
   box-shadow: 0 0 20px black;
 }
 
 img {
-  border-radius: 10px;
+  border-radius: 60px;
 }
 
 button:hover {
