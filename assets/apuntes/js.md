@@ -34,7 +34,7 @@ mi-proyecto/
     └── main.js
 ```
 
-Se vincula el scrip en el final del <body> utilizando la etiqueta <script>:
+Se vincula el script en el final del `<body>` utilizando la etiqueta `<script>`:
 
 ```html
 <!DOCTYPE html>
@@ -125,9 +125,9 @@ let pais = "AR";  // Declarar e inicializar en una sola línea
 
 | Palabra clave | ¿Se puede reasignar? | Alcance (scope) | ¿Cuándo usarla? |
 |---|---|---|---|
-| `const` | No | Bloque `{ }` | **Por defecto.** Usala siempre que el valor no vaya a cambiar. |
-| `let` | Sí | Bloque `{ }` | Cuando necesitás reasignar (contadores, acumuladores, etc.). |
-| `var` | Sí | Función | **Evitala.** Es la forma antigua, tiene comportamientos confusos. |
+| `const` | No | Bloque `{ }` |  Usar siempre que el valor no vaya a cambiar. |
+| `let` | Sí | Bloque `{ }` | **Por defecto.** Cuando sea necesario reasignar (contadores, acumuladores, etc.). |
+| `var` | Sí | Función | **Evitar.** Es la forma antigua, tiene comportamientos confusos. |
 
 ```js
 const PI = 3.14159;
@@ -149,7 +149,7 @@ JavaScript distingue mayúsculas y minúsculas: `total`, `Total` y `TOTAL` son t
 | UPPER_SNAKE_CASE | `MAX_INTENTOS`, `API_URL` | Constantes globales |
 | PascalCase | `Usuario`, `CarritoDeCompras` | Clases y componentes |
 
-> **Buena práctica:** usá nombres semánticos. El código se lee muchas más veces de las que se escribe.
+> **Buena práctica:** usar nombres semánticos. El código se lee muchas más veces de las que se escribe.
 
 ```js
 // Mal
@@ -310,18 +310,7 @@ console.log(5 + "3");    // "53"    (number + string = concatenación)
 console.log(5 - "3");    // 2       (con - sí convierte a number)
 ```
 
-### 6.2 Operadores de asignación
-
-```js
-let x = 10;
-x += 5;    // x = x + 5  →  x vale 15
-x -= 3;    // x = x - 3  →  x vale 12
-x *= 2;    // x = x * 2  →  x vale 24
-x /= 4;    // x = x / 4  →  x vale 6
-x %= 4;    // x = x % 4  →  x vale 2
-```
-
-### 6.3 Incremento y decremento
+### 6.2 Incremento y decremento
 
 ```js
 let i = 5;
@@ -329,7 +318,7 @@ i++;       // i = 6 (equivale a i = i + 1)
 i--;       // i = 5 (equivale a i = i - 1)
 ```
 
-### 6.4 Operadores de comparación
+### 6.3 Operadores de comparación
 
 Los comparadores **siempre devuelven un booleano**.
 
@@ -365,7 +354,7 @@ if (Number(input) === 5) {
 }
 ```
 
-### 6.5 Operadores lógicos
+### 6.4 Operadores lógicos
 
 | Operador | Nombre | Resultado |
 |---|---|---|
@@ -647,7 +636,7 @@ do {
 
 ### 9.3 `for` clásico
 
-Compacta la inicialización, condición y actualización en una sola línea. Es el más usado cuando **sabés de antemano cuántas veces iterar**.
+Compacta la inicialización, condición y actualización en una sola línea. Es el más usado cuando **se sabe de antemano cuántas veces iterar**.
 
 **Sintaxis:** `for (inicialización; condición; actualización) { ... }`
 
@@ -709,6 +698,7 @@ for (let tabla = 1; tabla <= 3; tabla++) {
     }
 }
 ```
+> **Nota:** en próximas materias verán por qué, pero anidar fors debería ser siempre la última opción.
 
 ---
 
