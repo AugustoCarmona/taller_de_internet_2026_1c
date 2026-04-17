@@ -1,0 +1,139 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    background-color: rgba(249, 238, 223, 0.839);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+hr {
+    color: palevioletred;
+}
+h1, h3 {
+    color: palevioletred;
+}
+
+.destacado{
+    color:rgba(204, 38, 110, 0.827);
+    font-weight: bold;
+}
+
+.main-container {
+
+  width: 100%;
+  
+  margin: 0 auto;
+  padding: 3px;
+  background-color: #c189ba;
+}
+#main-title{
+    color:rgba(204, 38, 110, 0.827);
+    font-size: xxx-large; 
+}
+h2{
+    color:#cc2d7d;
+    text-align: center;
+}
+.foto1 {
+    width: 200px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+.tarjeta-perfil {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tooltip-texto {
+  visibility: hidden;     
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: #fff;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 14px;
+  position: absolute;
+  z-index: 1;
+  bottom: -10%;           
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tarjeta-perfil:hover .foto1 {
+    transform: scale(1.05);
+}
+.tarjeta-perfil:hover .tooltip-texto {
+    visibility: visible;
+    opacity: 1;
+}
+.especial {
+  text-align: center;
+}
+input::placeholder {
+    color: #CDB4DB;
+    font-size: 0.9em;
+    font-style: italic;
+}
+table {
+    width: 100%;
+    border-collapse: separate; /* Mejor para bordes redondeados */
+    border-spacing: 0;
+    margin-top: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(177, 148, 148, 0.15); /* Sombra con el tono de tu rosa */
+    border-radius: 15px; /* Más redondeado para un look moderno */
+    overflow: hidden;
+    border: 1px solid rgba(177, 148, 148, 0.2); /* Borde sutil */
+}
+
+th {
+    background-color: #B19494;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 20px 15px; /* Más aire arriba y abajo */
+    border: none;
+}
+
+td {
+    padding: 18px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f9f1f1; 
+    color: #5a4f4f; 
+    font-size: 15px;
+}
+
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #fff9f9; 
+}
+
+
+tbody tr:hover {
+    background-color: #f2e9e9;
+    transform: scale(1.002); 
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+}
+
+
+td:first-child {
+    font-weight: 600;
+    color: #B19494;
+}
