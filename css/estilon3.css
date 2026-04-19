@@ -1,0 +1,164 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+head {
+    position: absolute;
+    border-color: brown;
+    border-style: solid;
+    border-width: 10px;
+}
+
+a {
+    color: white;
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    color: whitesmoke;
+    background-color: darkred;
+
+}
+
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #1a0a0a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4),
+                 0px 0px 15px rgba(139, 0, 0, 0.3);
+}
+
+h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #2c1810;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #3a2520;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25),
+                 0px 0px 5px rgba(139, 0, 0, 0.2);
+}
+
+h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #3a2520;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    margin: 15px 0 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.3);
+}
+
+th {
+    background: linear-gradient(135deg, #2a1a1a, #1a0a0a);
+    color: #d4af37;
+    border-bottom: 2px solid #8b0000;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.frase {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    transition: all 0.3s ease;
+    cursor: pointer;  /* Cambia el cursor a "mano" */
+}
+
+img:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+ol {
+    list-style-type: upper-roman;  /* I, II, III, IV... */
+    /* O lower-roman para i, ii, iii, iv... */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    border-left: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+li::before {
+    content: "❧";
+    position: absolute;
+    left: -5px;
+    top: 8px;
+    color: olivedrab;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    border-left-color: olivedrab;
+    padding-left: 30px;
+}
+
+li:hover::before {
+    opacity: 1;
+    left: -10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.3);
+}
+
+th {
+    background: linear-gradient(135deg, #2a1a1a, #1a0a0a);
+    color: #d4af37;
+    border-bottom: 2px solid #8b0000;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}

@@ -1,0 +1,28 @@
+body {
+  font-family: Verdana, sans-serif;
+  color: #2C3E50;
+  background-color: #EAEFF2;
+}
+
+#main-title {
+  color: #003366;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #FFFFFF;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}

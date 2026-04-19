@@ -1,0 +1,21 @@
+body {
+  background-color: bisque;
+  color: darkred;
+  font-family: 'Times new roman', monospace; 
+}
+section {
+  min-height: 200px;
+  border-bottom: 1px solid #30363D;
+}
+.tool-list li {
+  color: darkolivegreen;
+  min-height: 20px;
+}
+
+
+<h2>
+<p :hover> {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
