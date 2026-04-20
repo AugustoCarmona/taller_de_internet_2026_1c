@@ -1,0 +1,38 @@
+name: Validate Branch Name
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get branch name
+        id: branch
+        run: echo "name=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+
+      - name: Validate PascalCase format
+        run: |
+          BRANCH="${{ steps.branch.outputs.name }}"
+          echo "Branch name: $BRANCH"
+
+          if [[ ! "$BRANCH" =~ ^[A-Z][a-zA-Z]+$ ]]; then
+            echo "::error::El nombre de la rama '$BRANCH' no cumple el formato PascalCase."
+            echo ""
+            echo "El nombre debe:"
+            echo "  - Empezar con mayúscula"
+            echo "  - Contener solo letras (sin números, guiones, barras ni espacios)"
+            echo "  - Tener al menos 2 caracteres"
+            echo ""
+            echo "Ejemplo válido: AugustoCarmona"
+            echo ""
+            echo "Para corregirlo:"
+            echo "  git checkout -b NombreCorrecto"
+            echo "  git push origin NombreCorrecto"
+            echo "  git push origin --delete $BRANCH"
+            exit 1
+          fi
+
+          echo "Nombre de rama válido."
