@@ -2,6 +2,8 @@
 
 - [Apunte de HTML](assets/apuntes/html.md)
 - [Apunte de CSS](assets/apuntes/css.md)
+- [Apunte de CSS Layout](assets/apuntes/css_layout.md)
+- [Apunte de JS inicial](assets/apuntes/js.md)
 
 # Taller de Internet I
 
